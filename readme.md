@@ -1,5 +1,5 @@
 ## Personal Portfolio
-This is my most recent portfolio, and it's live [HERE](https://zimvomatwa.github.io/whoiszimvo/). My old one is here [There](https://zimvomatwa.github.io/) **by the time you see this it might have nothing but a "coming soon" message.
+This is V2 iteration of my portfolio, and it's live [HERE](https://thehumanzimvo.github.io/zimvo/). My old one is here [There](https://thehumanzimvo.github.io/zimvoonline/) **by the time you see this it might have nothing but a "coming soon" message.
 
 ---
 ### Stacks
