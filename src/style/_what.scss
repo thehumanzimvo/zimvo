@@ -1,0 +1,99 @@
+.what {
+    // background: linear-gradient(rgb(28, 92, 187),white)
+    background: rgb(96, 83, 160);
+    // position: relative;
+    img {
+        height: 20rem;
+        width: auto;
+    }
+    h2 {
+        font-family: 'Odibee Sans', cursive;
+        font-weight: lighter;
+        color: white;
+    }
+}
+
+.projects {
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    a {
+        color: black;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        color: black;
+
+        .card {
+            background: white;
+            margin: 0rem 3rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 2rem;
+            overflow: hidden;
+            align-self: center;
+            // padding: 1.5rem;
+
+            .gitrepo {
+                font-size: 2rem;
+                // display: flex;
+                padding: 2rem;
+                margin: 1.7rem 13rem;
+                width: fit-content;
+                text-align: center;
+            }
+            .gitrepo:hover {
+                    background: rgb(72, 153, 207);
+                    // padding: 1rem 2rem;
+                    border-radius: 0.7rem;
+                    color: white;
+            }
+            .buns {
+                font-size: 2rem;
+                // display: flex;
+                padding: 2rem;
+                margin: 1rem 13rem;
+                width: fit-content;
+                text-align: center;
+                margin-left: 14rem;
+            }
+            .buns:hover {
+                    background: rgb(72, 153, 207);
+                    // padding: 1rem 2rem;
+                    border-radius: 0.7rem;
+                    color: white;
+            }
+
+            h4 {
+                padding: 1.5rem;
+                // margin: 10rem 0rem;
+                margin-top: 3rem;
+                // position: relative;
+                // width: max-content;
+            }
+            // h4::after {
+            //     content: "";
+            //     position: absolute;
+            //     height: 5px;
+            //     width: 100%;
+            //     background: green;
+            //     left: 0;
+            //     bottom: 0;
+            // }
+            p {
+                padding: 2rem;
+            }
+            img {
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+}

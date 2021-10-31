@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Source+Code+Pro&family=Roboto:ital@0;1&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap') */
+.home {
+  overflow: hidden;
+  position: relative;
+}
+
+.home::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 252, 252, 0)), to(rgba(48, 44, 44, 0.822))), url(./img/background.jpg);
+  background-image: linear-gradient(rgba(253, 252, 252, 0), rgba(48, 44, 44, 0.822)), url(./img/background.jpg);
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+.nav-container {
+  background: #8faaa6;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+.nav-container a {
+  color: black;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+
+nav #emblem {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  position: relative;
+}
+
+nav #emblem::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  background: red;
+  border-radius: 50%;
+  -webkit-transform: translate(-10%, -25%);
+          transform: translate(-10%, -25%);
+  mix-blend-mode: screen;
+}
+
+nav .ref {
+  padding: 2rem;
+}
+
+nav .ref:hover {
+  background: #4899cf;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  color: white;
+}
+
+nav .contact {
+  background: #4899cf;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+}
+
+nav .contact:hover {
+  color: white;
+}
+
+.homepage {
+  display: -ms-grid;
+  display: grid;
+  min-height: 90vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
+      grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+}
+
+.homepage h2 {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #fbf7fc;
+  font-size: 7rem;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+}
+
+.homepage h2::before,
+.homepage h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.homepage h2::before {
+  background: teal;
+  -webkit-animation: typewriter 4s ease 1s forwards;
+          animation: typewriter 4s ease 1s forwards;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+.homepage .intel {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  position: relative;
+  -webkit-transform: translateY(20rem);
+          transform: translateY(20rem);
+  opacity: 0;
+  -webkit-animation: fadeInUp 2s ease 5s forwards;
+          animation: fadeInUp 2s ease 5s forwards;
+}
+
+.homepage .intel h3, .homepage .intel p {
+  color: red;
+  font-size: 20rem;
+  font-weight: 700;
+}
+
+.homepage .intel p {
+  font-size: 10rem;
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.homepage h3 {
+  padding-bottom: 3rem;
+}
+
+.what {
+  background: #6053a0;
+}
+
+.what img {
+  height: 20rem;
+  width: auto;
+}
+
+.what h2 {
+  font-family: 'Odibee Sans', cursive;
+  font-weight: lighter;
+  color: white;
+}
+
+.projects {
+  min-height: 90vh;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects a {
+  color: black;
+}
+
+.projects .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+.projects .cards .card {
+  background: white;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.projects .cards .card .gitrepo {
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 1.7rem 13rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.projects .cards .card .gitrepo:hover {
+  background: #4899cf;
+  border-radius: 0.7rem;
+  color: white;
+}
+
+.projects .cards .card .buns {
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 1rem 13rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin-left: 14rem;
+}
+
+.projects .cards .card .buns:hover {
+  background: #4899cf;
+  border-radius: 0.7rem;
+  color: white;
+}
+
+.projects .cards .card h4 {
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+.projects .cards .card p {
+  padding: 2rem;
+}
+
+.projects .cards .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.who {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #f1f5f5;
+}
+
+.who li {
+  list-style: none;
+  text-decoration: overline;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.who .buns {
+  font-family: 'Odibee Sans', cursive;
+  font-weight: lighter;
+  color: #3058c7;
+  padding-left: 10%;
+  padding-top: 5rem;
+}
+
+.who .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10rem;
+  padding-right: 10rem;
+}
+
+.who .content h1, .who .content h3, .who .content h4 {
+  margin-top: 3rem;
+}
+
+.who .content h4 {
+  font-size: 2.5rem;
+}
+
+.who .content p {
+  margin: 1.7rem;
+  font-size: 1.7rem;
+  line-height: 1.7em;
+  letter-spacing: -0.02em;
+}
+
+.who .content .contact-list a {
+  color: black;
+}
+
+.who .persona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(./img/hi.jpg);
+  background-size: cover;
+  line-height: 1.6;
+  border-radius: 5rem;
+  margin: 2rem;
+}
+
+.who .persona h3, .who .persona p, .who .persona a {
+  margin-left: 25rem;
+}
+
+.who .persona .resume a {
+  font-size: 2.5rem;
+  background-color: #52ff2f;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+}
+
+.who .persona .resume a:hover {
+  background: #3289b8;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  color: white;
+}
+
+footer {
+  min-height: 10vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer h1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  color: white;
+}
+
+footer img {
+  height: 5rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Odibee Sans', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Odibee Sans', cursive;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 8rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #234d9b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e24d08;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  nav #emblem {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  nav ul li {
+    margin-left: 5rem;
+  }
+  .homepage {
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
+  }
+  h2, .initel {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .home img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .what {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .what h2 {
+    margin-top: 5rem;
+  }
+  .what .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .what .card {
+    margin: 5rem;
+  }
+  .who h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  footer h1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
